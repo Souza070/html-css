@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: idroid;
+  src: url("idroid.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(124, 192, 124);
+  margin: 0px;
+  text-align: justify;
+}
+
+#div-lista {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+#div-video {
+    background-color: #2b7722;
+    padding: 50px;
+}
+
+#div-conteudo {
+    padding: 10px;
+}
+
+#div-aside {
+    padding: 10px;
+}
+
+#outra-div {
+    padding: 10px;
+}
+
+u {
+    text-decoration: underline;
+}
+
+ul {
+  width: 50%;
+  list-style: none;
+
+}
+
+li {
+  text-decoration: none;
+}
+
+a.link {
+    color: #35c025;
+}
+
+a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: "idroid", Times, serif;
+  font-size: 3em;
+  margin: 1px;
+  color: #2b7722;
+}
+
+h1#principal {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  text-indent: 30px;
+  text-align: justify;
+  font-family: arial, cursive;
+}
+
+p#d1 {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+span.info {
+    color: white;
+}
+h1#d2 {
+  font-family: "idroid", Times, serif;
+  font-size: 2em;
+  margin: 1px;
+  background: linear-gradient(to right #abd6b6, #92cca0, #b1d8ba86);
+  background: linear-gradient(to left, #abd6b6, #92cca0, #c6ddcb86);
+  color: #2b7722;
+}
+
+h1#d3 {
+  font-family: "idroid", Times, serif;
+  font-size: 2em;
+  margin: 1px;
+  background: linear-gradient(to right, #abd6b6, #92cca0, #b1d8ba86);
+  background: linear-gradient(to left, #abd6b6, #92cca0, #c6ddcb86);
+  color: #2b7722;
+}
+
+h2 {
+  background: #36b46d;
+  color: white;
+  margin: 0px;
+  padding: 3px;
+  border-radius: 6px 6px 0px 0px;
+}
+
+header {
+  background: linear-gradient(to right, #42b636, #36b46d, #00ffaf);
+  padding: 20px;
+  margin: 0px;
+}
+
+article {
+  background-color: white;
+  border-radius: 7px;
+  width: 970px;
+  margin: 0 auto;
+}
+
+img {
+  margin: auto;
+  display: block;
+}
+
+iframe {
+  position: unset;
+  width: 100%;
+  height: 100vh;
+  padding: 0px;
+}
+
+aside {
+  color: black;
+  background-color: #abd6b6;
+  margin: 0px;
+  border-radius: 6px;
+}
+footer {
+    font-size: 1em;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #2b7722;
+    text-align: center;
+    padding: 6px;
+}

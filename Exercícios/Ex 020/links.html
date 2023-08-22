@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <!--                                                            
+        #   = id                                             
+        .   = class                                          
+        :   = pseudo-classes                                
+        ::  = pseudo-element                                 
+        >   = clilden                                       
+    
+    Altura  = height
+    Largura = widht  
+    Linha   = bolder
+    Linha + = pedding
+    Margem  = margin
+   Contorno = outline      -->
+
+   <!--
+    Tipos de caixa
+    box-level = se estiver em um texto, ele quebra a linha do texto ao adicionar a caixa.
+    inline-level = se estiver em um texto, nao há quebra de linha, adiciona a caixa e o texto segue na mesma linha.
+    div = quebra de linha.
+    span = sem quebra de linha.
+   -->
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: rgb(100, 13, 13);
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:visited {
+            color: brown;
+        }
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+        a:active {
+            color: rgb(5, 156, 156);
+        }
+        a::before {
+            content: '⇢  ';
+        }
+        a::after {
+            content: '  ⇠';
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="http://gustavoguanabara.github.io" target="_blank">Repercutório Github</a></li>
+        <li><a href="http://youtube.com/cursoemvideo/" target="_blank">Canal do youtube</a></li>
+        <li><a href="http://www.cursoemvideo.com" target="_blank">Site do cursoemVideo</a></li>
+    </ul>
+</body>
+</html>
