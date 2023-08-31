@@ -14,6 +14,11 @@
     --fonte-android: 'Sriracha', cursive;
     }
 
+    body {
+        background-image: url(pacote-d012/imagens/background001.jpg);
+        background-size: cover;
+        height: 100vh;  
+    }
 p {
     font-family: var(--fonte-destaque);
 }
