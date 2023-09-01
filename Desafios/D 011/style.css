@@ -3,36 +3,73 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+ header a, footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem { 
+    background-color: rgba(37, 36, 36, 0.767);
+    color: white;
+}
+
+section.imagem > p {
+    background-color: rgba(0, 0, 0, 0.13);
+    width: 400px;
+}
 :root {
     --cor0: #42401D;
     --cor1: #3D381B;
     --cor2: #47391F;
     --cor3: #362F1A;
     --cor4: #3D2D1B;
-
-    --fonte-destaque:' Passion one', cursive;
-    --fonte-android: 'Sriracha', cursive;
     }
-
-    body {
-        background-image: url(pacote-d012/imagens/background001.jpg);
-        background-size: cover;
-        height: 100vh;  
-    }
-p {
-    font-family: var(--fonte-destaque);
-}
-
-header {
-    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
-    color: white;
-    font-family: var(--fonte-destaque);
-    font-weight: bold;
-    min-height: 150px;
-    text-align: center;
-    padding-top: 40px;
-}
-
-main {
-    font-family: var(--fonte-android);
-}
