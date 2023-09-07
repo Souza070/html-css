@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabelas</title>
     <style>
+
         body {
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -14,6 +15,14 @@
             width: 500px;
             border-collapse: collapse;
             padding: 10px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 18px;
+            background-color: lightgray;
+
         }
 
         td, th {
@@ -25,6 +34,10 @@
             color: white;
         }
 
+        tbody > tr:nth-child(2n) {
+            background-color: lightgray;
+        }
+
         td.num {
             text-align: right;
         }
@@ -34,18 +47,21 @@
     <h1>Uso de Tabelas Grandes</h1>
     <!--
         ANATOMIA PARA TABELAS GRANDES
-    THEAD = cabeça
-        TR, TD, TH
-    TBODY = corpo
-        TR, TD, TH
-    IFOOT = rodapé
-        TR, TD, TH
+    TABLE
+        CAPTION
+        THEAD = cabeça
+            TR, TD, TH
+        TBODY = corpo
+            TR, TD, TH
+        IFOOT = rodapé
+            TR, TD, TH
     -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Popolução</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">Popolução</th>
             </tr>
         </thead>
         <tbody>
@@ -160,7 +176,7 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>249.180.376</strong></td>
             </tr>
         </tfoot>
