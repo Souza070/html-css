@@ -17,6 +17,7 @@ header {
 header > h1 {
     padding: 10px;
     text-align: center;
+    color: white;
 }
 
 span#burguer {
@@ -80,7 +81,24 @@ article > p {
     color: rgba(0, 0, 0, 0.7);
     font-size: 2em;
     padding: 10px;
-    border-left: 4px solid #333;
+    border-left: 4px solid rgba(0, 0, 0, 0.37);
     background-color: #f2f2f2;
     margin: 10px 0;
+}
+
+footer {
+    background-color: rgba(128, 128, 128, 0.514); 
+    color: rgba(0, 0, 0, 0.664);
+    padding: 10px;
+    text-align: center;
+}
+
+footer a {
+    color: rgba(89, 78, 211, 0.767);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
